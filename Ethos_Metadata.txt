@@ -1,0 +1,73 @@
+******************************************************************************************
+
+This file includes the Metadata of the Ethos Hate Speech Data Exerpt
+
+******************************************************************************************
+
+Description:
+
+N = 217 instances of hate speech data extracted from the ETHOS Hate Speech Dataset (Multilabel). 
+
+The source file is located in a GitHub repository. The link for that is: "https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset"
+The source file is a comma separated file. It contains 8 labels for the 433 comments with hate speech content.
+
+ETHOS is a shortened form for multi-labEl haTe speecH detectiOn dataSet (ETHOS). The dataset has been generated from various social media platforms. ETHOS is a Greek word meaning “character” that is used to describe the guiding beliefs or ideals that characterize a community, nation, or ideology. The Greeks also used this word to refer to the power of music to influence emotions, behaviors, and even morals.
+
+The APA style reference to the paper is as follows:
+"Mollas, I., Chrysopoulou, Z., Karlos, S., & Tsoumakas, G. (2022). ETHOS: a multi-label hate speech detection dataset. Complex & Intelligent Systems, 1-16."
+
+******************************************************************************************
+
+Fields:
+This extracted dataframe consists of 9 columns and 433 rows. The columns are as follows:
+	
+Column 1: 
+	Name: Comment
+	Description: This contains the comments that are extracted from different social media platforms
+	Data Type: Object
+
+Column 2:
+	Name: Violence
+	Description: This columns lets you know whether the comments incites any violence or not. If it incites violence then the value is 1 else 0.
+	Data Type: Float
+
+Column 3:
+	Name: Directed vs Generalized
+	Description: This columns lets you know whether the comment is directed to a person or a group. For a person, the value is 1 and for the group, the value is 0.
+	Data Type: Float
+
+Column 4:
+	Name: Gender
+	Description: This column gives the Gender category of the hate speech. It holds values 0 or 1. If the comment is related to a specific gender then the value is 1, else it is 0. 
+	Data Type: Float
+
+Column 5:
+	Name: Race
+	Description: This column gives the Race category of the hate speech. It holds values between 0 or 1. If the comment is related to a specific Race then the value is 1, else 0.
+	Data Type: Float
+
+Column 6:
+	Name: National Origin
+	Description: This column gives the national origin category of the hate speech. It holds values between 0 or 1. If the comment is related to a nation then the value is 1, else 0.
+	Data Type: Float
+
+Column 7:
+	Name: Disability
+	Description: This column gives the disability category of the hate speech. It holds values between 0 or 1. If the comment is related to a specific disability (eg. any syndrome) then the value is 1, else 0.
+	Data Type: Float
+
+Column 8:
+	Name: Religion
+	Description: This column gives the religion category of the hate speech. It holds values between 0 or 1. If the comment is related to a specific religion then the value is 1, else 0.
+	Data Type: Float
+
+Column 9:
+	Name: Sexual Orientation
+	Description: This column gives the sexual orientation category of the hate speech. It holds values between 0 or 1. If the comment is related to any sexual orientation then the value is 1, else 0.
+	Data Type: Float
+
+
+******************************************************************************************
+
+Notes:
+1) In some columns, inspite of specifying that the value would be 0 or 1, some do have values between those two data points (eg. 0.833). This indicates that the column has a comment that is a mixture of two or more categories.
