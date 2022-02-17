@@ -1,0 +1,68 @@
+******************************************************************************************
+
+This file contains the metadata of Fox News User Comments Hate Speech Dataset.
+
+******************************************************************************************
+
+Description:
+
+N = 153 instances of hate speech data extracted from the Fox News User Comments dataset.
+
+The source file is located in a GitHub repository. The link for that is: "https://github.com/sjtuprog/fox-news-comments"
+The source file is a json file. It contains a total of 1528 annotated comments from the Fox News website. The comments are crawled from 10 URLs described in comment-URL.txt file located in the GitHub repository.
+
+The APA style reference to the paper is as follows:
+"Gao, L., & Huang, R. (2017). Detecting Online Hate Speech Using Context Aware Models. RANLP."
+
+******************************************************************************************
+
+Fields:
+
+This extracted dataframe consists of 8 columns and 153 rows. The columns are as follows:
+	
+Column 1: 
+	Name: title
+	Description: This contains the title name of the news article.
+	Data Type: Object
+
+Column 2:
+	Name: text
+	Description: This columns contains the raw text of the comment from the dataset.
+	Data Type: Object
+
+Column 3:
+	Name: label
+	Description: This columns lets you know whether the comment is related to hatespeech or not. If yes, then the value is 1, else it is 0.
+	Data Type: Integer
+
+Column 4:
+	Name: succ
+	Description: This column contains the successor comment, if any.
+	Data Type: Object
+
+Column 5:
+	Name: meta
+	Description: This column contains the meta description of the news article.
+	Data Type: Object
+
+Column 6:
+	Name: user
+	Description: This column contains the name of the user who posted the comment, if any.
+	Data Type: Object
+
+Column 7:
+	Name: mentions
+	Description: If the comments contains any mention to a user, then this column will list all those users
+	Data Type: Object
+
+Column 8:
+	Name: prev
+	Description: This column contains the previous comment, if any.
+	Data Type: Float
+
+
+******************************************************************************************
+
+Notes:
+1) The data exerpt is balanced between hate speech and non-hate speech comments.
+2) The columns succ, mentions, and prev can contains null (empty) values too.
