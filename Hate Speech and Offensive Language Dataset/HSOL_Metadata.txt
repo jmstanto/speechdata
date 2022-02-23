@@ -1,0 +1,50 @@
+******************************************************************************************
+
+This file contains the metadata of Hate Speech and Offensive Language Dataset.
+
+******************************************************************************************
+
+Description:
+
+N = 4597 instances of hate speech data extracted from the Hate Speech and Offensive Language Dataset.
+
+The source file is located on Kaggle. It is collected from Twitter. The text is classified as: hate-speech, offensive language, and neither. Due to the nature of the study, it’s important to note that this dataset contains text that can be considered racist, sexist, homophobic, or generally offensive.
+
+The APA style reference to the paper is as follows:
+"Davidson, T., Warmsley, D., Macy, M.W., & Weber, I. (2017). Automated Hate Speech Detection and the Problem of Offensive Language. ICWSM."
+
+******************************************************************************************
+
+Fields:
+
+This extracted dataframe consists of 6 columns and 4957 rows. The columns are as follows:
+
+Column 1: 
+	Name: count
+	Description: This contains the number of CrowdFlower users who coded each tweet (min is 3, sometimes more users coded a tweet when judgments were determined to be unreliable by CF)
+	Data Type: Integer
+
+Column 2:
+	Name: hate_speech
+	Description: This columns contains the number of CF users who judged the tweet to be hate speech.
+	Data Type: Integer
+
+Column 3:
+	Name: offensive_language
+	Description: This columns the number of CF users who judged the tweet to be offensive.
+	Data Type: Integer
+
+Column 4:
+	Name: neither
+	Description: This column contains the number of CF users who judged the tweet to be neither offensive nor non-offensive
+	Data Type: Integer
+
+Column 5:
+	Name: class
+	Description: This column contains the class label for majority of CF users. It is 0 - hate speech, 1 - offensive language, and 2 - neither
+	Data Type: Integer
+
+Column 6:
+	Name: tweet
+	Description: This column contains the raw text tweet.
+	Data Type: Object
