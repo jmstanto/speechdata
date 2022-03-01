@@ -1,0 +1,55 @@
+******************************************************************************************
+
+This file contains the metadata of Multilingual and Multi-Aspect Hate Speech Dataset.
+
+******************************************************************************************
+
+Description:
+
+N = 1129 instances of hate speech data extracted from the Multilingual and Multi-Aspect Hate Speech Dataset.
+
+The source file is located on GitHub. It is collected from various twitter. The text is classified as: tweet, sentiment, directness, annotator_sentiment, target, and group
+
+The APA style reference to the paper is as follows:
+"Ousidhoum, Nedjma & Lin, Zizheng & Zhang, Hongming & Song, Yangqiu & Yeung, Dit-Yan. (2019). Multilingual and Multi-Aspect Hate Speech Analysis. 4667-4676. 10.18653/v1/D19-1474. "
+
+******************************************************************************************
+
+Fields:
+
+This extracted dataframe consists of 6 columns and 1129 rows. The columns are as follows:
+
+Column 1: 
+	Name: tweet
+	Description: This column contains the raw text tweet.
+	Data Type: Object
+
+Column 2:
+	Name: sentiment
+	Description: This columns contains the tweet sentiment i.e what kind of hate speech it is. Eg. offensive, offensive_disrespectful, etc.
+	Data Type: Object
+
+Column 3:
+	Name: directness
+	Description: This columns the hostility directness (indirect/direct).
+	Data Type: Object
+
+Column 4:
+	Name: annotator_sentiment
+	Description: This column contains the sentiment of the annotator. If someone annotates a tweet and labels a sentiment, then it displays here.
+	Data Type: Object
+
+Column 5:
+	Name: target
+	Description: This column contains the target attribute for the tweet. Let's if the target group is for Male/Female, then this variable would have value as 'gender' and so on for others.
+	Data Type: Object
+
+Column 6:
+	Name: group
+	Description: his column contains the target group for the tweet. For example, special_needs, women, etc.
+	Data Type: Object
+
+
+******************************************************************************************
+Notes:
+1) The text tweet has the tag for the user but it doesn't contain the actual person's name. It is just mentioned as @user.
