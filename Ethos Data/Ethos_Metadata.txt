@@ -1,6 +1,6 @@
 ******************************************************************************************
 
-This file includes the Metadata of the Ethos Hate Speech Data Exerpt
+This file contains the Metadata of the Ethos Hate Speech Data Exerpt
 
 ******************************************************************************************
 
